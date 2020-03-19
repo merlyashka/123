@@ -1,0 +1,25 @@
+	<html>
+	  <body>
+	    <h1>Hello from Chef's Apache</h1>
+     <h2>hostname:  <%= node['hostname'] %></h2>
+     <%= node['ipaddress'] %>
+
+     <h3><%= node['platform'] %> </h3>
+
+<h4>
+<%= node['platform_version'] %> <br>
+<%= node['ipaddress'] %> <br>
+<%= node['macaddress']  %> <br>
+<%= node['fqdn'] %>  <br>
+<%= node['hostname']  %>  <br>
+<%= node['domain']  %>  <br>
+<%= node['recipes']  %>  <br>
+<%= node['roles']  %>  <br>
+<%= node['ohai_time']  %>  <br>
+
+
+<h1>There is parameter : <%= node['httpd']['port'] %></h1>
+</h4>
+
+	  </body>
+	</html>
